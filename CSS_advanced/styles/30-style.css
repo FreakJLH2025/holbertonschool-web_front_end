@@ -1,0 +1,60 @@
+/* 30-style.css */
+
+/* Card-work outer container */
+.card-work .card-outer {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card-work image */
+.card-work .card-image img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+/* Card-work inner container */
+.card-work .card-inner {
+  position: absolute;
+  top: -0.1rem;
+  left: -0.1rem;
+  right: -0.1rem;
+  z-index: 1;
+}
+
+/* Card-work inner hover state */
+.card-work:hover .card-inner {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Card-work title */
+.card-work .card-title {
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  height: 100%;
+  position: relative;
+}
+
+/* Card-work title link */
+.card-work .card-title a {
+  display: block;
+  text-decoration: none;
+  padding-top: 45%;
+}
+
+/* Card-work title link after pseudo-element */
+.card-work .card-title a::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  content: "";
+}
+
+/* Card-work hover title */
+.card-work:hover .card-title {
+  opacity: 1;
+}
