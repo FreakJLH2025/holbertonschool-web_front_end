@@ -1,0 +1,23 @@
+/* 29-style.css */
+
+/* Update nav-item-link-hover property */
+:root {
+  --nav-item-link-hover: var(--color-white);
+}
+
+/* Nav-link before pseudo elements */
+nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0;
+  height: 20%;
+}
+
+/* Nav-link before pseudo elements when nav-item is hovered */
+nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary);
+  width: 100%;
+}
