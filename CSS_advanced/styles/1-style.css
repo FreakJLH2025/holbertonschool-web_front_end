@@ -1,0 +1,13 @@
+/* 1-style.css */
+
+/* Enable smooth scrolling behavior on the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Basic reset and font setup for the body */
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+}
